@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatbot</title>
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-bar">
+        <h1>Gemini Chatbot</h1>
+    </header>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Ask Gemini...." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
