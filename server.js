@@ -6,7 +6,7 @@ const {GoogleGenerativeAI} = require('@google/generative-ai');
 const app = express();
 app.use(express.json()); 
 
-const genAI = new GoogleGenerativeAI("AIzaSyDgC4s60_W-5XENzMshkTUsyVMgMygjxf0");
+const genAI = new GoogleGenerativeAI("");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 app.post('/api/gemini-response', async (req,res) => {
